@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 export default function ViewPaste() {
   const { id } = useParams();
   const [paste, setPaste] = useState();
-  const backend = import.meta.env.VITE_API_ORIGIN || 'http://localhost:4000';
+  const backend = import.meta.env.VITE_API_ORIGIN || 'https://pastebin-zvgm.onrender.com';
 
   useEffect(() => {
     (async () => {
