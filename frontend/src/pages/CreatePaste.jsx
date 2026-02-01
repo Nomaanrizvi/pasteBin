@@ -5,7 +5,7 @@ export default function CreatePaste() {
   const [views, setViews] = useState('');
   const [ttl, setTtl] = useState('');
   const [result, setResult] = useState(null);
-  const backend = import.meta.env.VITE_API_ORIGIN || 'http://localhost:4000';
+  const backend = import.meta.env.VITE_API_ORIGIN || 'https://pastebin-zvgm.onrender.com';
 
   async function handleSubmit(e) {
     e.preventDefault();
